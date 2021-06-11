@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RootActivities.RegisterRootUser">
+
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sanfransicoheavy"
+            android:text="Register."
+            android:textColor="#DD0000"
+            android:textSize="40sp"></TextView>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/ll"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sanfransicoheavy"
+            android:text="Personal Details"
+            android:textColor="#DD0000"
+            android:clickable="false"
+            android:enabled="false"
+            android:background="@android:color/transparent"
+            android:textSize="20sp"></EditText>
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="30dp"
+        android:textColorHint="#DD0000">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/sanfransicoregular"
+            android:hint="NAME"
+            android:paddingBottom="20dp"
+            android:textColorHint="#DD0000"
+            android:textSize="15sp"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/til"
+        android:layout_marginTop="40dp"
+        android:textColorHint="#DD0000">
+
+        <EditText
+
+            android:id="@+id/password"
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+
+            android:layout_marginRight="30dp"
+
+            android:fontFamily="@font/sanfransicoregular"
+
+
+            android:hint="Password"
+
+            android:inputType="text"
+            android:paddingBottom="20dp"
+
+
+            android:textSize="15dp"
+
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/til1"
+        android:layout_marginTop="40dp"
+        android:textColorHint="#DD0000">
+
+        <EditText
+
+            android:id="@+id/email_id"
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+
+            android:layout_marginRight="30dp"
+
+            android:fontFamily="@font/sanfransicoregular"
+
+
+            android:hint="E-MAIL ID"
+            android:inputType="text"
+            android:paddingBottom="20dp"
+
+            android:textSize="15dp"
+
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/til2"
+        android:layout_marginTop="40dp"
+        android:textColorHint="#DD0000">
+
+        <EditText
+
+            android:id="@+id/username"
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+
+            android:layout_marginRight="30dp"
+
+            android:fontFamily="@font/sanfransicoregular"
+
+
+            android:hint="USERNAME"
+            android:inputType="text"
+            android:paddingBottom="20dp"
+
+            android:textSize="15dp"
+
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="359dp"
+        android:layout_height="42dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        app:cardBackgroundColor="#DD0000"
+        android:background="@drawable/button"
+        app:cardElevation="20dp"
+        android:id="@+id/cV"
+        android:outlineAmbientShadowColor="#DD0000"
+        app:cardCornerRadius="5dp"
+        android:outlineSpotShadowColor="#DD0000"
+        >
+
+        <RelativeLayout
+            android:layout_width="343dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/sanfransicoregular"
+                android:gravity="center"
+                android:text="NEXT"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:layout_marginTop="15dp"
+
+                ></TextView>
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
